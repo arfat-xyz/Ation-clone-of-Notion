@@ -77,3 +77,6 @@ npx convex dev
 ```shell
 npm run dev
 ```
+
+### Deployment
+- [Deploy](https://docs.convex.dev/production/hosting/)

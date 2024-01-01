@@ -60,10 +60,10 @@ const Publish = ({ doc }: PublishProps) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button size={"sm"} variant={"ghost"}>
-          Publish
-          {doc?.isPublished && <Globe className="text-sky-500 w-4 h-4 ml-2" />}
-        </Button>
+          <Button size={"sm"} variant={"ghost"}>
+            Publish
+            {doc?.isPublished && <Globe className="text-sky-500 w-4 h-4 ml-2" />}
+          </Button>
       </PopoverTrigger>
       <PopoverContent className="w-72" align="end" alignOffset={8} forceMount>
         {doc?.isPublished ? (

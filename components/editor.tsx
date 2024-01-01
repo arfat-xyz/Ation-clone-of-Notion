@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { MutableRefObject } from "react";
 import { BlockNoteEditor, PartialBlock } from "@blocknote/core";
 import { BlockNoteView, useBlockNote } from "@blocknote/react";
 import "@blocknote/core/style.css";
@@ -11,6 +11,7 @@ interface EditorProps {
   onChange: (value: string) => void;
   initialData?: string | undefined;
   editable?: boolean;
+  ref?: MutableRefObject<undefined>;
 }
 const Editor = ({ onChange, initialData, editable }: EditorProps) => {
   const { resolvedTheme } = useTheme();
@@ -26,7 +27,6 @@ const Editor = ({ onChange, initialData, editable }: EditorProps) => {
       onChange(JSON.stringify(editor.topLevelBlocks, null, 2)),
     uploadFile: handleUpload,
   });
-
   return (
     <div>
       <BlockNoteView
