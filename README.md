@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Personal portfolio
+[Arfatur Rahman](https://www.arfat.app/)
+# NextJS Notion Clone
 
-## Getting Started
+This project is a feature-rich Notion clone built using NextJS 14 with App Routes. It incorporates various cutting-edge technologies and libraries to provide a seamless user experience.
 
-First, run the development server:
+## Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Convex Database**: Empower your application with Convex for efficient and scalable database management.
+  
+- **Clerk User Management**: Leverage Clerk for robust user authentication and management, ensuring a secure and seamless login experience for your users.
+
+- **Edge Store for Image Management**: Store and retrieve images efficiently using Edge Store, enhancing the performance of image-related operations.
+
+- **Tailwind CSS Framework**: Create a stunning and responsive user interface with the help of Tailwind CSS, a highly customizable CSS framework.
+
+- **Shadcn for Reusable UI Components**: Boost development productivity with Shadcn, a library of reusable UI components that maintain consistency and aesthetic appeal throughout your application.
+
+- **Use Blocknote Core & React**: Implement Notion-style page editing functionality seamlessly with Use Blocknote Core & React, enhancing the user's ability to create and organize content effortlessly.
+
+- **Next Themes for Dark and Light Mode**: Provide users with a personalized experience by incorporating Next Themes for dynamic switching between dark and light modes.
+
+- **Emoji-picker-react**: Enhance user interactions by integrating emoji-picker-react, allowing users to easily select and add emojis to their content.
+
+# Installation
+
+### Prerequisites
+
+**Node version 18.x.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/arfat-xyz/Ation-clone-of-Notion.git
+```
+### Go to Ation-clone-of-Notion
+
+```shell
+ cd Ation-clone-of-Notion/
+ ```
+
+### Install packages
+
+```shell
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup .env file
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```js
+# ./.env.local
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
 
-## Learn More
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-To learn more about Next.js, take a look at the following resources:
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### To get upper keys & url visit
+-  [Clerk](https://clerk.com/docs/quickstarts/setup-clerk)
+-  [Convex](https://docs.convex.dev/quickstart/nextjs)
+-  [Edge store](https://edgestore.dev/docs/quick-start)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Setup Convex
 
-## Deploy on Vercel
+```shell
+npx convex dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Start the app
+
+```shell
+npm run dev
+```
